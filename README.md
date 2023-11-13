@@ -16,15 +16,15 @@ Do your best to answer the questions with specific details. Writing about code c
 
 - Which one did you choose? Provide the name and base URL.
 
-> http://
+> https://boardgamegeek.com/xmlapi/
 
 - What is the purpose of this API? Describe what data the API provides and why someone might want to use it.
 
-> The purpose of this API is...
+> The purpose of this API is to gather data on boardgames. This data provides information like the creator behind a boardgame, user ratings, and current marketplace price. This is a great resource for boardgame enthuasiasts.
 
 - What is the URL of the documentation?
 
-> http://
+> https://api.geekdo.com/xmlapi2
 
 ### Response
 
@@ -32,22 +32,29 @@ For the following questions, choose a single endpoint to request within Postman.
 
 - What is the full URL of the endpoint?
 
-> http://
+> https://boardgamegeek.com/xmlapi/search?search=mythology
 
 - What response do you receive when you make a request to that endpoint? Be sure to wrap your answer in the correct formatting for JSON.
 
-```json
-
+```   
+<boardgame objectid="6707">
+			<name primary="true">Age of Mythology: The Boardgame</name>			
+							<yearpublished>2003</yearpublished>
+					</boardgame>
+			<boardgame objectid="14008">
+			<name primary="true">Age of Mythology: The Boardgame – 5-6 Player Expansion</name>			
+							<yearpublished>2003</yearpublished>
+					</boardgame>
 
 ```
 
 - What status code did you get back from your request? Why did you receive this status code?
 
-> 00
+> I the status code I received was a 200. This means that the request-response cycle was a success. 
 
 - Click on the **response** headers in Postman. What are the `Content-Type` and `Content-Length` (provide exact values)?
 
-> `Content-Type`:
+> `Content-Type`: text/xml; charset="UTF-8"
 
 > `Content-Length`:
 
