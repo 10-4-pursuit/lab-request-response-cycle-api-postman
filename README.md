@@ -16,7 +16,7 @@ Do your best to answer the questions with specific details. Writing about code c
 
 - Which one did you choose? Provide the name and base URL.
 
-> http://www.dnd5eapi.co/docs
+> http://www.dnd5eapi.co
 
 - What is the purpose of this API? Describe what data the API provides and why someone might want to use it.
 
