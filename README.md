@@ -16,17 +16,19 @@ Do your best to answer the questions with specific details. Writing about code c
 
 - Which one did you choose? Provide the name and base URL.
 
-> https://pokeapi.co/api/v2/pokemon
+> Cat Facts
+> https://meowfacts.herokuapp.com/
 
 - What is the purpose of this API? Describe what data the API provides and why someone might want to use it.
 
 > The purpose of this API is...
+>A simple api that returns a random fact about cats on a GET request
 
-> The API at https://pokeapi.co/api/v2/pokemon is part of the Pokemon API PokeAPI, which is a RESTful web service that provides a comprehensive set of data related to Pokemon. When you make a GET request to this endpoint, you receive data about Pokemon, including their names, abilities, forms, game indices, held items, moves, and more. The response is typically in JSON format, making it easy to parse and use in web applications.
+.
 
 - What is the URL of the documentation?
 
-> http://PokeAPI Documentation
+> https://meowfacts.herokuapp.com 
 
 ### Response
 
@@ -34,96 +36,22 @@ For the following questions, choose a single endpoint to request within Postman.
 
 - What is the full URL of the endpoint?
 
-> http://pokeapi.co/api/v2/pokemon
-
+> https://cat-fact.herokuapp.com
 - What response do you receive when you make a request to that endpoint? Be sure to wrap your answer in the correct formatting for JSON.
 
 ```json
 {
-    "count": 1292,
-    "next": "https://pokeapi.co/api/v2/pokemon?offset=20&limit=20",
-    "previous": null,
-    "results": [
-        {
-            "name": "bulbasaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/1/"
-        },
-        {
-            "name": "ivysaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/2/"
-        },
-        {
-            "name": "venusaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/3/"
-        },
-        {
-            "name": "charmander",
-            "url": "https://pokeapi.co/api/v2/pokemon/4/"
-        },
-        {
-            "name": "charmeleon",
-            "url": "https://pokeapi.co/api/v2/pokemon/5/"
-        },
-        {
-            "name": "charizard",
-            "url": "https://pokeapi.co/api/v2/pokemon/6/"
-        },
-        {
-            "name": "squirtle",
-            "url": "https://pokeapi.co/api/v2/pokemon/7/"
-        },
-        {
-            "name": "wartortle",
-            "url": "https://pokeapi.co/api/v2/pokemon/8/"
-        },
-        {
-            "name": "blastoise",
-            "url": "https://pokeapi.co/api/v2/pokemon/9/"
-        },
-        {
-            "name": "caterpie",
-            "url": "https://pokeapi.co/api/v2/pokemon/10/"
-        },
-        {
-            "name": "metapod",
-            "url": "https://pokeapi.co/api/v2/pokemon/11/"
-        },
-        {
-            "name": "butterfree",
-            "url": "https://pokeapi.co/api/v2/pokemon/12/"
-        },
-        {
-            "name": "weedle",
-            "url": "https://pokeapi.co/api/v2/pokemon/13/"
-        },
-        {
-            "name": "kakuna",
-            "url": "https://pokeapi.co/api/v2/pokemon/14/"
-        },
-        {
-            "name": "beedrill",
-            "url": "https://pokeapi.co/api/v2/pokemon/15/"
-        },
-        {
-            "name": "pidgey",
-            "url": "https://pokeapi.co/api/v2/pokemon/16/"
-        },
-        {
-            "name": "pidgeotto",
-            "url": "https://pokeapi.co/api/v2/pokemon/17/"
-        },
-        {
-            "name": "pidgeot",
-            "url": "https://pokeapi.co/api/v2/pokemon/18/"
-        },
-        {
-            "name": "rattata",
-            "url": "https://pokeapi.co/api/v2/pokemon/19/"
-        },
-        {
-            "name": "raticate",
-            "url": "https://pokeapi.co/api/v2/pokemon/20/"
-        }
+    "data": [
+        "Neutering a cat extends its life span by two or three years.",
+        "Owning a cat can reduce the risk of stroke and heart attack by a third.",
+        "Cats sleep 16 to 18 hours per day. When cats are asleep, they are still alert to incoming stimuli. If you poke the tail of a sleeping cat, it will respond accordingly.",
+        "The first cat show was in 1871 at the Crystal Palace in London.",
+        "Many cats cannot properly digest cows milk. Milk and milk products give them diarrhea.",
+        "In 1987 cats overtook dogs as the number one pet in America.",
+        "The Maine Coone is the only native American long haired breed.",
+        "A happy cat holds her tail high and steady.",
+        "Purring not always means happiness. Purring could mean a cat is in terrible pain such as during childbirth. Kitten will purr to their mother to let her know they are getting enough milk while nursing. Purring is a process of inhaling and exhaling, usually performed while the mouth is closed. But don't worry, if your cat is purring while your gently petting her and holding her close to you - that is a happy cat!",
+        "The average cat food meal is the equivalent to about five mice."
     ]
 }
 
@@ -138,30 +66,17 @@ For the following questions, choose a single endpoint to request within Postman.
 
 > `Content-Type`: application/json; charset=utf-8
 
-> `Content-Length`: 155
+> `Content-Length`: 1166
 
 - Summarize the most salient parts of the data you are getting back. How would you describe what is included within the response?
 
-> The data we received includes...
-> Count: The total count of Pokemon available in the dataset.
-> Next: A URL link to the next page of Pokemon data, allowing for paginated retrieval.
-> Previous: A URL link to the previous page of Pokemon data (null if on the first page).
-> Results: An array of Pokemon entries, where each entry includes:
-> Name: The name of the Pokemon.
-> URL: A URL link to retrieve more detailed information about the specific Pokemon.
+> Its basically puts the object data (Cat Facts) in an array of different facts about cats. Very informative facts about your cat.
 
 
 - Identify at least two ways to use the data within a web application.
 
-> I could imagine integrating this API into an app that ...
-
-> Pokedex Display:
-
->Use the data to create a Pokedex-style application where users can browse and view information about different Pokemon.
-
-> Team Builder/Game Companion:
-
->Create a Pokemon team builder or game companion app where users can assemble and manage their Pokemon teams for battles.
+> You can use it for like a daily cat facts calendar.
+> A random cat facts generator. I would personally be intrested in making a cute random cat fact generator or a daily cat facts calender for the few people I know that love thier cats.
 
 ### Documentation
 
@@ -171,19 +86,19 @@ The following questions relate to the documentation of the API.
 
 > The documentation was ...
 
-> Very informative in the sence that if I ever was intrested in making a bootleg  version of something like a pokemon game I can do so with the help of the API, or I can at least use it as a reference point. I dont want to get sued.
+> As a proud cat owner I liked that it gives a good amount of very informative cats facts. Some of which I was not aware of.
 
 - What did you find challenging about the documentation? Cite specific examples.
 
 > I found the documentation ...
 
-> Maybe the part where we were asked to search for the content-type and length. I eventually figured out how to search for the infomation, but at this point in time I'm not to familiar with how to navigate postman and manipulate it to give me all the info I might need for a certain project. I also see myself attempting to use certain APIs on my own projects. Perhaps a gps API or a weather API. I am very interest in learning more about this, it seems like its bootstrap but for APIs.  
+> Nothing particularly challenging, I guess maybe the finding the correct prompts you need to pull the APIs information.
 
 - Did the quality of the documentation impact your decision to use it?
 
 > Yes/No because...
 
-> Yes, went I looked through the questions in the documentation it seemed like I would have an easier time with the answers using the pokeapi. Also it was one of the only apis I could get to work on postman. I also  subjectively found the pokeapi to be not as boring as the rest of the API options. I would maybe like to create a game or two at some point of my software engineering career. This I feel brings me a few steps closer to that.
+> Yes, because I have a cat and it just seemed subjectively informative. I don't know how anyone else would feel about the information. I know more dog people than cat people.
 
 - Did you switch which API you chose initially because of its documentation, or did you stick with the one you selected and work your way through it?
 
