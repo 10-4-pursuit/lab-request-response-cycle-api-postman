@@ -16,15 +16,15 @@ Do your best to answer the questions with specific details. Writing about code c
 
 - Which one did you choose? Provide the name and base URL.
 
-> http://
+> https://dog.ceo/api/
 
 - What is the purpose of this API? Describe what data the API provides and why someone might want to use it.
 
-> The purpose of this API is...
+> The purpose of this API is... to provide images and dog info related to certain breeds. Users can also generate random images of dogs and available dog breed information.
 
 - What is the URL of the documentation?
 
-> http://
+> https://dog.ceo/dog-api/documentation/
 
 ### Response
 
@@ -32,22 +32,23 @@ For the following questions, choose a single endpoint to request within Postman.
 
 - What is the full URL of the endpoint?
 
-> http://
+> http://dog.ceo/api/breeds/image/random
 
 - What response do you receive when you make a request to that endpoint? Be sure to wrap your answer in the correct formatting for JSON.
 
 ```json
-
+"message": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_2299.jpg",
+    "status": "success"
 
 ```
 
 - What status code did you get back from your request? Why did you receive this status code?
 
-> 00
+> 200 (OK)
 
 - Click on the **response** headers in Postman. What are the `Content-Type` and `Content-Length` (provide exact values)?
 
-> `Content-Type`:
+> `Content-Type`:application/json
 
 > `Content-Length`:
 
@@ -65,19 +66,20 @@ The following questions relate to the documentation of the API.
 
 - What did you like about the documentation? Cite specific examples.
 
-> The documentation was ...
+> The documentation was ...clear and concise explanations of available endpoints, parameters, and response formats. Examples make it easy to understand how to use the API.
 
-- What did you find challenging about the documentation? Cite specific examples.
+- What did you find challenging about the documentation? Cite specific examples. 
+As a beginner it would be more helpful to to have a better explanation of how to integrate the API into a web application.
 
 > I found the documentation ...
 
 - Did the quality of the documentation impact your decision to use it?
 
-> Yes/No because...
+> Yes/No because... because it seemed simpler to integrate the API into a web application as opposed to having so much data to work with.
 
 - Did you switch which API you chose initially because of its documentation, or did you stick with the one you selected and work your way through it?
 
-> Yes/No I ended up ...
+> Yes/No I ended up ... No I did not switch but I did look through a few API's before i decided on this one.
 
 ### Definitions
 
@@ -85,12 +87,12 @@ The following questions require you to define some concepts and terms. Provide d
 
 - In your own words, summarize the request-response cycle.
 
-> The request-response cycle ...
+> The request-response cycle ...is a way for programs to share images of dogs. You can ask the API for random dog images.
 
 - In your own words, describe what an API is.
 
-> An API is ...
+> An API is ... a large database that allows users to use the information for web applicatoins or othr uses when needed,
 
 - In your own words, describe the purpose of Postman.
 
-> Postman is an application that ...
+> Postman is an application that ...helps you send requests to the Dog CEO's Dog API. It allows you to see the responses, check if everything is working, and understand how to use the dog pictures in your own projects.
