@@ -104,7 +104,7 @@ The following questions relate to the documentation of the API.
 
 > Yes/No I ended up ...
 
-> Yes, I did originally have an arts and design API that I was working with, but it ended up being not what I expected. Didn't know what the hell I was  looking at, at the time although now that I'm able to navigate postman a little better. I'm sure I would have an easier time understanding what it is I'm looking at, so I'll probaby check out the arts and design API again.
+> Yes, I did originally had an arts and design API that I was working with, but it ended up being not what I expected. Didn't know what the hell I was  looking at, at the time although now that I'm able to navigate postman a little better. I'm sure I would have an easier time understanding what it is I'm looking at, so I'll probaby check out the arts and design API again.
 
 ### Definitions
 
