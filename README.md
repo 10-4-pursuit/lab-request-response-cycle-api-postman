@@ -70,7 +70,7 @@ For the following questions, choose a single endpoint to request within Postman.
 
 - What status code did you get back from your request? Why did you receive this status code?
 
-> 200 OK
+> 200 OK meaning the response was successful.
 
 - Click on the **response** headers in Postman. What are the `Content-Type` and `Content-Length` (provide exact values)?
 
@@ -80,11 +80,11 @@ For the following questions, choose a single endpoint to request within Postman.
 
 - Summarize the most salient parts of the data you are getting back. How would you describe what is included within the response?
 
-> The data we received includes... 
+> The data we received includes... So much information about pokemon, a libraries worth. Well that is what it is!
 
 - Identify at least two ways to use the data within a web application.
 
-> I could imagine integrating this API into an app that ...
+> I could imagine integrating this API into an app that ... An application i'd find myself using as just a reference or a novelty application.
 
 ### Documentation
 
